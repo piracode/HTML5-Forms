@@ -14,7 +14,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Josefin Slab", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -23,8 +23,8 @@ body {
   padding-bottom: 7rem;
   background: linear-gradient(
     to bottom,
-    rgb(83, 203, 241) 0%,
-    rgb(209, 242, 252) 100%
+    hsl(40, 97%, 64%) 0%,
+    rgb(249, 54, 24) 100%
   );
 }
 
@@ -154,7 +154,7 @@ select {
 .form input:focus,
 .form textarea:focus {
   background: white;
-  border: 1px solid #36c670;
+  border: 1px solid #fcc14c;
 }
 
 /* input:invalid {
