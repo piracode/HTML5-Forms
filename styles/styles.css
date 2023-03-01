@@ -101,10 +101,14 @@ select#referredby option.greytext {
 }
 
 .form input[type="submit"] {
-  background: #36c670;
-  color: #555;
+  background: #040496;
+  color: #fff;
   cursor: pointer;
   font-weight: 600;
+}
+
+.form input[type="reset"] {
+  color: red;
 }
 
 fieldset {
@@ -118,7 +122,7 @@ span {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #36c670;
+  background-color: #040496;
   text-align: center;
   font-size: 12px;
   line-height: 30px;
@@ -168,4 +172,27 @@ input[id="details"] {
 
 input[id="details"] {
   color: #888;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+fieldset.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+fieldset .dev-skills-labels {
+  font-weight: bold;
+  grid-column: 1/-1;
 }
