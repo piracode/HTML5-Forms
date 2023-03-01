@@ -186,6 +186,13 @@ input[id="details"] {
   border: 0 !important;
 }
 
+fieldset.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
 fieldset .dev-skills-labels {
   font-weight: bold;
+  grid-column: 1/-1;
 }
