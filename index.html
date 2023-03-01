@@ -18,16 +18,34 @@
           <form id="form" method="POST" action="submit">
             <fieldset>
               <legend><span>1</span>Account Info</legend>
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" required />
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" required />
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password" required />
+              <label for="name" class="visually-hidden">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full name"
+                required
+              />
+              <label for="email" class="visually-hidden">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email address"
+                required
+              />
+              <label for="password" class="visually-hidden">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password... min 8 chars"
+                required
+              />
             </fieldset>
             <fieldset>
               <legend><span>2</span>Dev Skills</legend>
-              <label>Programming Languages</label>
+              <label class="dev-skills-labels">Programming Languages</label>
               <input type="checkbox" name="html" id="html" value="html" />
               <label for="html">HTML</label>
               <input type="checkbox" name="css" id="css" value="css" />
@@ -36,6 +54,18 @@
               <label for="js">JavaScript</label>
               <input type="checkbox" name="php" id="php" value="php" />
               <label for="php">PHP</label>
+              <label class="dev-skills-labels">Dev Ops</label>
+              <input type="checkbox" name="GIT" id="GIT" value="GIT" />
+              <label for="GIT">GIT</label>
+              <input type="checkbox" name="Gulp" id="Gulp" value="Gulp" />
+              <label for="Gulp">Gulp</label>
+              <input
+                type="checkbox"
+                name="Webpack"
+                id="Webpack"
+                value="Webpack"
+              />
+              <label for="Webpack">Webpack</label>
             </fieldset>
             <fieldset>
               <legend><span>3</span>Experience</legend>
